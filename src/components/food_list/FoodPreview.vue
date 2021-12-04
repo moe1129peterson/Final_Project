@@ -1,7 +1,7 @@
 <template>
     <div id='previewCard'>
         <div class='coverImg'>
-            <img v-if="imgURL" class="food-cover" :src="`https://covers.openlibrary.org/b/isbn/${imgURL}-M.jpg`" />
+            <img v-if="imgURL" class="food-cover" :src="`https://api.yelp.com/v3/businesses/search?term=delis&latitude=37.786882&longitude=-122.399972' />
         </div>
         <div class='foodInfo'>
             <h2>{{ title }}</h2>
